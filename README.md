@@ -3,3 +3,8 @@ Social determinants of health are the various economic, social, and environmenta
 The sociome project seeks to create a sustainable data commons for researchers at UChicago and other institutions to study social determinants of health. 
 
 This package define the data documentation standard used by the sociome project. The documentation is written in a markup language and can be compiled to a different databases and ORM frameworks. Interested parties can extend this repository to extend or refine our standard. 
+
+## Usage
+```
+$ python compile.py md > docs.md
+```
