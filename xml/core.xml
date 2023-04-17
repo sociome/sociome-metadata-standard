@@ -1,0 +1,28 @@
+<dataset>
+  <attribute description="A classification of original into broad categories of mechanisms. e.g., neighborhood economic activity v.s. envioronmental readings." compileType="dictionary">DataCategory</attribute>
+
+  <attribute description="A classification of original data format which has implications on how the data can be stored, processed, and interpreted. In essence, it defines the main population unit of interest for this data" compileType="dictionary">DataType</attribute>
+
+  <attribute description="Any entity that can be spatially defined as a geographic area, with either natural (physical) or administrative boundaries." compileType="dictionary">GeographicUnit</attribute>
+
+  <attribute description="Any period of time: year, week, month, day, or bimonthly or quarterly periods, etc." compileType="dictionary">TimeUnit</attribute>
+
+  <attribute description="The name of the original organization that collected the data. The data may have been subsequently processed, but this captures the original data source." compileType="string">CollectingOrganization</attribute>
+
+  <attribute description="An internal unique name that we will refer to this data asset." compileType="string" integrity="unique">Name</attribute>
+
+  <attribute description="A link to a computational notebook that converts the source data into the final format. This includes cleaning, reformatting, and aggregating." compileType="url">ProcessingCode</attribute>
+
+  <attribute description="A description of any stipulations of how this data can be used" compileType="string" integrity="unique">TermsOfUse</attribute>
+
+</dataset>
+
+
+<quality>
+  <attribute description="An internal unique name that we will refer to this data asset. All quality records are linked to a particular dataset. " compileType="dictionary" integrity="foreign">Dataset:Name</attribute>
+
+  <attribute description="A description of any incompleteness in this dataset." compileType="dictionary">Missingness</attribute>
+
+  <attribute description="A description of any incorrect values in this dataset." compileType="dictionary">Incorrectness</attribute>
+
+</quality>
