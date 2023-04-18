@@ -17,14 +17,19 @@
 
 		  <attribute description="A description of any stipulations of how this data can be used" compileType="string" integrity="unique">TermsOfUse</attribute>
 
+		  <attribute description="The date at which the artifact was accessed" compileType="date">WhenAccessed</attribute>
+
+		  <attribute description="The organization that processed the data into its current form." compileType="string">ProcessingOrganization</attribute>
+
 		</dataset>
 
 		<quality description="Documentation related to data quality.">
-		  <attribute description="An internal unique name that we will refer to this data asset. All quality records are linked to a particular dataset. " compileType="dictionary" integrity="foreign">Dataset:Name</attribute>
+		  <attribute description="An internal unique name that we will refer to this data asset. All quality records are linked to a particular dataset. " compileType="string" integrity="foreign">Dataset:Name</attribute>
 
 		  <attribute description="A description of any incompleteness in this dataset." compileType="dictionary">Missingness</attribute>
 
 		  <attribute description="A description of any incorrect values in this dataset." compileType="dictionary">Incorrectness</attribute>
 
 		</quality>
+
 	</core>
